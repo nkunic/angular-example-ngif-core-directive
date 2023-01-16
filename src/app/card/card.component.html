@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card__header">
+    <h3 class="card__title">
+      {{ cardIndex + ') ' + course.description }}
+    </h3>
+  </div>
+  <div class="card__content">
+    <div class="card__image">
+      <img [src]="course.iconUrl" [alt]="course.description" />
+    </div>
+    <p class="card__description">
+      {{ course.longDescription }}
+    </p>
+  </div>
+  <div class="card__footer">
+    <button
+      class="card__button card__button--standard"
+      (click)="onCustomButtonClicked()"
+    >
+      Custom browser event
+    </button>
+  </div>
+</div>
