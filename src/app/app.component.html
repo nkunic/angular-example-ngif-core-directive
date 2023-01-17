@@ -1,8 +1,8 @@
-<h1>ANGULAR Component @Output - Custom browser Events and Event emitters</h1>
+<h1>ANGULAR ngIf Directive and the Elvis Operator</h1>
 
 <div class="cards">
   <app-card
-    *ngFor="let course of courses; index as i;"
+    *ngFor="let course of courses; index as i"
     [cardIndex]="i + 1"
     [course]="course"
     (customEventClicked)="onCustomEventClicked($event)"

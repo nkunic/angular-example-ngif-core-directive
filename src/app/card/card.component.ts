@@ -20,4 +20,8 @@ export class CardComponent {
     // this.customEventClicked.emit(this.course);
     this.customEventEmitter.emit(this.course);
   }
+
+  isImageVisible() {
+    return this.course && this.course.iconUrl;
+  }
 }
