@@ -1,19 +1,19 @@
 <div class="card" *ngIf="course">
   <div class="card__header">
     <h3 class="card__title">
-      <!--{{ cardIndex + ') ' + course.description }}-->
-      <!--{{ cardIndex + ') ' + course?.description }}-->
-      {{ cardIndex + ') ' + course.description }}
+      <!--{{ cardIndex + ') ' + course.title }}-->
+      <!--{{ cardIndex + ') ' + course?.title }}-->
+      {{ cardIndex + ') ' + course.title }}
     </h3>
   </div>
   <div class="card__content">
     <div class="card__image">
-      <!--<img *ngIf="false" [src]="course.iconUrl" [alt]="course.description" />-->
-      <!--<img *ngIf="course.iconUrl" [src]="course.iconUrl" [alt]="course.description" />-->
+      <!--<img *ngIf="false" [src]="course.iconUrl" [alt]="course.title" />-->
+      <!--<img *ngIf="course.iconUrl" [src]="course.iconUrl" [alt]="course.title" />-->
       <img
         *ngIf="isImageVisible(); else noImage"
         [src]="course.iconUrl"
-        [alt]="course.description"
+        [alt]="course.title"
       />
 
       <ng-template #noImage>
@@ -21,9 +21,9 @@
       </ng-template>
     </div>
     <p class="card__description">
-      <!--{{ course.longDescription }}-->
-      <!--{{ course?.longDescription }}-->
-      {{ course.longDescription }}
+      <!--{{ course.description }}-->
+      <!--{{ course?.description }}-->
+      {{ course.description }}
     </p>
   </div>
   <div class="card__footer">
