@@ -1,4 +1,4 @@
-<div class="card" *ngIf="course">
+<div class="card" *ngIf="course"><!-- course object is availlable }}-->
   <div class="card__header">
     <h3 class="card__title">
       <!--{{ cardIndex + ') ' + course.title }}-->
@@ -11,11 +11,11 @@
       <!--<img *ngIf="false" [src]="course.iconUrl" [alt]="course.title" />-->
       <!--<img *ngIf="course.iconUrl" [src]="course.iconUrl" [alt]="course.title" />-->
       <img
-        *ngIf="isImageVisible(); else noImage"
+        *ngIf="isImageVisible(); else noImage" 
         [src]="course.iconUrl"
         [alt]="course.title"
       />
-
+      <!-- Else & Template reference }}-->
       <ng-template #noImage>
         <p>No image is available</p>
       </ng-template>
